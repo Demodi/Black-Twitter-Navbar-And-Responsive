@@ -1,0 +1,88 @@
+@-moz-document domain("twitter.com") {
+/* Author @Demo_d */
+
+.global-nav-inner, .modal-header {
+background: none repeat scroll 0% 0% rgb(40, 40, 40) !important;
+}
+#global-tweet-dialog .modal-tweet-form-container {
+background-color: #fff !important;
+}
+
+.Footer.module, .module.trends, .module.wtf-module,.ProfileWTFAndTrends .WhoToFollow, .js-profileClusterFollow {
+display: none !important;
+}
+.ScrollBump.ScrollBump--recentlyFollowed {display:none !important;}   
+.Grid-cell.u-size2of3 {width:70% !important;}
+.Grid-cell.u-size2of3 .Grid-cell.u-size1of3{ display: none !important; }
+
+a.is-preview:before {
+  content: "View photo";
+}
+.stream-item.open a.is-preview:before{
+content: "";
+}
+div.is-preview { 
+    display: none !important; 
+}
+.stream-item.open * div.is-preview {
+    display: block !important;
+}
+/*      
+.stream-item .cards-media-container { display: none !important; }
+.stream-item.open .cards-media-container { display: block !important; }*/
+.stream-item .expanded-content { display: none !important; }
+.stream-item.open .expanded-content { display: block !important; }  
+.tweet .tweet-actions { display: none !important; }
+.tweet:hover .tweet-actions { display: inline-block !important; }
+.u-size1of3, .u-size2of6, .u-size4of12 {
+width: 30%!important;
+}
+@media screen and (min-width: 1235px) {
+.Grid-cell.u-size2of3 .Grid-cell.u-lg-size2of3{width:80% !important;}
+}
+@media screen and (max-width: 980px) {
+.wrapper.wrapper-home .dashboard, .wrapper.wrapper-connect .dashboard, .wrapper.wrapper-discover .dashboard, .wrapper.wrapper-list .dashboard, .wrapper.wrapper-search .dashboard, .wrapper.wrapper-settings .dashboard{
+float: none!important;
+margin: 0 auto;
+width: 590px;
+display: block !important;
+}
+.wrapper.wrapper-profile .dashboard {display: none !important;}
+.dashboard .module.discover-nav li + li + li { display: none !important; }  
+.dashboard .module.discover-nav ul:first-child li:nth-child(2) .list-link {
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.wrapper.wrapper-list .dashboard .component.newest-members-module, .wrapper.wrapper-list .dashboard .component .module .flex-module { display: none!important; } 
+.enhanced-mini-profile .mini-profile .profile-summary {
+background-image: url('http://cdn.twitrcovers.com/wp-content/uploads/2014/03/Blue-Galaxies-l.jpg');
+background-position: 100% 100%;
+}
+.content-main {
+float: none!important;
+margin: 0 auto;
+}
+.wrapper, .wrapper-narrow, .wrapper-permalink {
+width: 100%;
+}
+.profile-card.profile-header {
+ margin: 0 auto 10px;
+ float: none !important;
+}
+.permalink.stream-uncapped {
+width: 590px;
+margin: 0 auto;
+}
+.ProfileCanopy--large, .ProfileCanopy--large .ProfileCanopy-header{height:95px}
+.AppContainer .ProfileCanopy-avatar {display:none !important;}
+.AppContainer .Grid-cell.u-size1of3 {display:none !important;}
+.AppContainer .Grid-cell.u-size2of3 {width:70% !important;} 
+.ProfileCanopy.is-locked + .AppContainer .u-size1of4{width: 22.2% !important;}
+.AppContainer .Grid-cell.u-size1of3 {width:50%!important;}
+.AppContainer .Grid-cell.u-size1of2 {width:50%!important;}
+.ProfileCanopy .ProfileNav-list .ProfileNav-item--userActions {right: 30px !important;}
+.ProfileCanopy.is-locked .ProfileNav-list .ProfileNav-item--userActions {right: -50px !important;}
+.ProfileTweet-actionList .ProfileTweet-action { float:left;}
+.home-tweet-box {width: auto !important;}
+}
+}
