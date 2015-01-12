@@ -1,6 +1,7 @@
 @-moz-document domain("twitter.com") {
 /* Author @Demo_d */
-
+.modal-overlay, #signup-dialog { display:none !important; }
+.modal-enabled, .grid-enabled, .overlay-enabled, .gallery-enabled {overflow: auto !important;}
 .global-nav-inner, .modal-header {
 background: none repeat scroll 0% 0% rgb(40, 40, 40) !important;
 }
