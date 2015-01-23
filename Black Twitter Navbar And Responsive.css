@@ -1,7 +1,8 @@
 @-moz-document domain("twitter.com") {
 /* Author @Demo_d */
-.modal-overlay, #signup-dialog { display:none !important; }
-.modal-enabled, .grid-enabled, .overlay-enabled, .gallery-enabled {overflow: auto !important;}
+.logged-out .modal-overlay, .logged-out #signup-dialog { display:none !important; }
+.modal-enabled {overflow: auto !important;}
+.modal-enabled .global-nav-inner {margin-right: 0px;}
 .global-nav-inner, .modal-header {
 background: none repeat scroll 0% 0% rgb(40, 40, 40) !important;
 }
